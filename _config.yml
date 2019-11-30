@@ -12,17 +12,17 @@ markdown: kramdown
 plugins:
 - jekyll-feed
   
-    #exclude:
-    #- docs
-    #- Gemfile
-    #- Gemfile.lock
-    #- node_modules
-    #- node_modules/
-    #- vendor/bundle/
-    #- vendor/cache/
-    #- vendor/gems/
-    #- vendor/ruby/
-    #- package-lock.json
-    #- package.json
-    #- gulpfile.js
-    #- theme-personal
+exclude:
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package-lock.json
+  - package.json
+  - gulpfile.js
+  - theme-personal
