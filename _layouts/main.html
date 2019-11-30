@@ -36,8 +36,8 @@
               {% include section.html %}
         </section>
         
-        <main class="site-main site-wrapper">
-            <h1>{{ page.title }}</h1>
+        <main class="site-main site-wrapper main-{{ page.title | slugify }}">
+            <h1 class="h1-{{ page.title }}">{{ page.title }}</h1>
             {{ content }}
 
         </main>

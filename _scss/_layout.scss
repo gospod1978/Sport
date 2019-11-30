@@ -23,6 +23,15 @@ body {
     color: #3498db;
 }
 
+.site-header .site-branding {
+    transition: all 2s ease-in-out;
+       
+    &:hover {
+        transform: rotate(360deg) scale(1.5);
+               
+    }
+}
+
 .site-header nav {
 
 }
@@ -31,7 +40,8 @@ body {
 .site-main {
     box-shadow: 0 0 1.5em 0 rgba(black, 0.9);
     border-radius: 0.5em;
-  
+    padding: 1em;
+    
     h1 {
     text-decoration: none;
     color: #3498db;
