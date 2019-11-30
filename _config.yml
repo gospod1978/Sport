@@ -1,0 +1,28 @@
+title: My Sport
+email: mgospodinov1978@gmail.com
+description: Hi there!
+destination: docs
+baseurl: "" 
+url: "" 
+twitter_username: gospod1978
+github_username:  gospod1978
+
+# Build settings
+markdown: kramdown
+plugins:
+- jekyll-feed
+  
+    #exclude:
+    #- docs
+    #- Gemfile
+    #- Gemfile.lock
+    #- node_modules
+    #- node_modules/
+    #- vendor/bundle/
+    #- vendor/cache/
+    #- vendor/gems/
+    #- vendor/ruby/
+    #- package-lock.json
+    #- package.json
+    #- gulpfile.js
+    #- theme-personal

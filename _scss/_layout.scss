@@ -1,0 +1,76 @@
+
+body {
+
+}
+
+.site-wrapper {
+    max-width: var(--layout-width, 65em);
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header h1 {
+    padding-bottom: 1.5em;
+}
+
+.site-header h1 a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.site-header nav {
+
+}
+
+
+.site-main {
+    box-shadow: 0 0 1.5em 0 rgba(black, 0.9);
+    border-radius: 0.5em;
+  
+    h1 {
+    text-decoration: none;
+    color: #3498db;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    }
+}
+
+
+.site-footer {
+
+}
+
+.card {
+    border: 2px solid #CCC;
+}
+
+.card p {
+    display: none;
+}
+
+.card p:first-of-type {
+    display: block;
+}
+
+.card .button .less {
+    display: none;
+}
+
+input:checked + .card p {
+    display: block;
+}
+
+input:checked + .card .button .more {
+    display: none;
+}
+
+input:checked + .card .button .less {
+    display: inline;
+}
+
+

@@ -1,0 +1,234 @@
+@charset "UTF-8";
+:root {
+  --font-family-main: Georgia, serif;
+  --font-family-headings: Palatino Linotype, serif;
+  --font-size: 18px;
+  --font-line-height: 1.5;
+  --layout-width: 55em;
+  --layout-padding-b: 2em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:after, *:befor {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size, 18px);
+  line-height: var(--font-line-height, 1.5);
+  font-family: var(--font-family-main, Verdana, sans-serif);
+}
+
+body, button, input, select, option {
+  font: inherit;
+}
+
+p, ul, ol {
+  padding-bottom: var(--layout-padding-b, 1.5em);
+}
+
+ul, ol {
+  paddin-left: 2.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-headings, var(--font-family-main));
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+blockquote {
+  padding: 0 2.5em;
+  border-left: 2px solid #000;
+  font-family: var(--font-family-headings, var(--font-family-main));
+  margin-bottom: var(--layout-padding-b, 1.5em);
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+blockquote p:last-child {
+  padding-bottom: 0;
+}
+
+blockquote p.author {
+  text-align: right;
+}
+
+.site {
+  max-width: var(--layout-width, 60em);
+  margin: 0 auto;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header h1 {
+  padding-bottom: 0.5em;
+}
+
+.site-header h1 a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.card {
+  border: 2px solid #CCC;
+}
+
+.card p {
+  display: none;
+}
+
+.card p:first-of-type {
+  display: block;
+}
+
+.card .button .less {
+  display: none;
+}
+
+input:checked + .card p {
+  display: block;
+}
+
+input:checked + .card .button .more {
+  display: none;
+}
+
+input:checked + .card .button .less {
+  display: inline;
+}
+
+.nav {
+  text-align: right;
+  padding-top: 0.5em;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  display: block;
+  margin: 0 0.7em;
+}
+
+.nav a {
+  display: flex;
+  padding: 0.5em 1em;
+  background: #3498db;
+  color: #000;
+  text-decoration: none;
+  opacity: 0.7;
+  border-radius: 0.3em;
+}
+
+.nav .current-page a,
+.nav a:hover {
+  background: #3498db;
+  color: #FFF;
+  transition: color 0.4s ease-in;
+}
+
+.nav a:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in;
+}
+
+.nav li a:before {
+  display: block;
+  margin-right: 0.5em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.sticky li a:before {
+  padding-left: 0.5em;
+}
+
+.nav li.page-title-about a:before {
+  content: "";
+}
+
+.nav li.page-title-contacts a:before {
+  content: "";
+}
+
+.nav li.page-title-services a:before {
+  content: "";
+}
+
+.nav li.page-title-home a:before {
+  content: "";
+}
+
+.sticky {
+  position: fixed;
+  top: 7em;
+}
+
+.sticky ul {
+  display: block;
+}
+
+.sticky li {
+  padding-bottom: 0.5em;
+}
+
+.sticky a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7em;
+  color: #000;
+  border-radius: 50%;
+  background: #3498db;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  opacity: 0.3;
+}
+
+/*# sourceMappingURL=site.css.map */

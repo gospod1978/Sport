@@ -1,0 +1,27 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+.site-footer .site-wrapper {
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.site-footer .social a {
+    background: #CCC;
+    color: #FFF;
+}
+
+.site-footer .site-wrapper p {
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in;
+}
+
+.site-footer:hover .site-wrapper p {
+    opacity: 0.8;
+}
+
+.site-footer .site-wrapper p:first-child {
+    font-size: 1.2em;
+}

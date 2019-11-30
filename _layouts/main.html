@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{ site.baseurl }}/scss/fontawesome/css/all.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">   
+        <title>
+            {% if page.title != 'Home' %}
+            {{ page.title }} - {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+        </title>
+    </head>
+    <body class="page-{{ page.title | slugify }}">
+
+        <div class="site">
+             
+            {% include navigation-sticky.html %}
+
+
+        <header class="site-header site-wrapper">
+                 
+
+            <div class="site-branding">
+                <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+            </div>
+                
+                {% include navigation.html location="header" %}
+
+        </header>
+
+        <section class="page-{{ page.title | slugify }}">
+              {% include section.html %}
+        </section>
+        
+        <main class="site-main site-wrapper">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+
+        </main>
+
+        <footer class="site-footer">
+
+            
+
+            {% include footer.html %}
+
+        </footer>
+
+    </div>
+
+        
+
+</body>
+</html>
+
+

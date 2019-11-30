@@ -1,0 +1,99 @@
+.nav {
+    text-align: right;
+    padding-top: 0.5em;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    display: block;
+    margin: 0 0.7em;
+}
+
+.nav a {
+    display: flex;
+    padding: 0.5em 1em;
+    background: #3498db;
+    color: #000;
+    text-decoration: none;
+    opacity: 0.7;
+    border-radius: 0.3em;
+}
+
+.nav .current-page a,
+.nav a:hover {
+    background: #3498db;
+    color: #FFF;
+    transition: color 0.4s ease-in;
+    
+}
+
+.nav a:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: transform 0.4s ease-in;
+}
+
+.nav li a:before {
+    display: block;
+    margin-right: 0.5em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.sticky li a:before {
+    padding-left: 0.5em;    
+}
+
+
+.nav li.page-title-about a:before {
+    content: '\f47f';
+}
+
+.nav li.page-title-contacts a:before {
+    content: '\f098';
+}
+
+.nav li.page-title-services a:before {
+    content: '\f4c4';
+}
+
+.nav li.page-title-home a:before {
+    content: '\f015';
+}
+
+.sticky {
+    position:fixed;
+    top: 10em;
+    z-index: 5;
+}
+
+.sticky ul {
+    display: block;
+}
+
+.sticky li {
+    padding-bottom: 0.5em;
+}
+
+.sticky a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    color: #000;
+    border-radius: 50%;
+    background: #3498db;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    opacity: 0.3;
+}
+
+.nav {
+    @include bp(mobile) {
+        display: none;
+    }
+}
