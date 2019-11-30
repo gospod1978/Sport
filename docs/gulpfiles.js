@@ -56,3 +56,4 @@ gulp.task("deploy", function() {
 	return cp.spawn('git status && git commit -am "Update" && git pull && git push', { stdio: "inherit", shell: true });
 });
 
+
