@@ -53,7 +53,7 @@ section .ar-box {
  transform:translateX(100%);
  /* Apply animation to this element */	
  -moz-animation: scroll-left 15s linear infinite;
- -webkit-animation: scroll-left 5s linear infinite;
+ -webkit-animation: scroll-left 1s linear infinite;
  animation: scroll-left 15s linear infinite;
 }
 /* Move it (define the animation) */
@@ -95,5 +95,15 @@ section .ar-box {
 
 .p-services p:before {
     content:'Фитнес програми! Диети! Хранене!';
+    z-index: 3;
+}
+
+.p-stories p:before {
+    content:'Те се довериха на нас! А вие?';
+    z-index: 3;
+}
+
+.p-packages p:before {
+    content:'Ние работим за вас!';
     z-index: 3;
 }

@@ -9,9 +9,7 @@ order: 2
     <h3>“Нашата мисия е да съчетаваме активността с най-чистите природни съставки, за да ти
         помогнем да постигнеш една здравословна трансформация отвътре навън”</h3>
     <blockquote>
-    <p>В продължение на дълги години търсих начина на хранене, който да съвпадне с ритъма ми на живот. Като юрист работата ми беше доста напрегната и никога не успявах да се храня балансирано, винаги бях без енергия и разчитах на кафе и кофеинови напитки за тонус. Но с времето нещата ставаха все по-зле, качих тегло и започнаха здравословните проблеми.</p>
-    <p>Тогава открих формулата за себе си - храни се възможно най-просто, с чисти и непреработени локални храни, прави дълги разходки в парка и тренирай за тонус на мускулите вкъщи. Но липсваше нещо. Нещо универсално, с което да дам "супер храна на клетъчно ниво", която да е богата на микронутриенти и да забързва метаболизма. Тогава открих билките и супер храните. Започнах да ги пия всеки ден. Създавах собствени смеси и комбинации, пиех ги редовно и видях резултатите - балансирано тегло, енергия, здраве и тонус. Тогава реших да покажа на хората, че е възможно да си в добра форма, да си здрав и да се чувстваш добре, дори и в този забързан начин на живот.</p>
-    <p>С помощта на експерти в храненето, фитнеса и фармацията, успяхме да създадем една гама продукти, която наистина ДЕЙСТВА. В съчетание с режим и тренировъчна програма, създадени от професионалисти и специално за нашите продукти, ние постигнахме един напълно завършен кръг, който не само да даде видими резултати, но и да възпита здравословни хранителни и тренировъчни навици.</p>
+                {% include blockquote.html %}
     </blockquote>
 
     <div class="my_photo">
@@ -32,35 +30,43 @@ order: 2
         </div>
     </div>
 </section>
+<div class="tren">
+    <h3>Нашите тренери</h3>
+</div>
+
 <div class="trenery">
-    <div class="my_trener">
+        <div class="my_trener">
         <div class="img">
-            <img src="{{ site.baseurl }}/images/CTO.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/fitnes1.jpg" alt="">
         </div>
-        <p class="author">Mihail Gospodinov</p>
-        <p class="author">Co-Founder</p>
+        <p class="author">Ивайла Иванова</p>
+        <p class="author">Tae Bo</p>
     </div>
     <div class="my_trener">
         <div class="img">
-            <img src="{{ site.baseurl }}/images/CTO.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/fitnes2.jpg" alt="">
         </div>
-        <p class="author">Mihail Gospodinov</p>
-        <p class="author">Co-Founder</p>
+        <p class="author">Румяна Динева</p>
+        <p class="author">Аеробика</p>
     </div>
     <div class="my_trener">
         <div class="img">
-            <img src="{{ site.baseurl }}/images/CTO.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/fitnes3.jpg" alt="">
         </div>
-        <p class="author">Mihail Gospodinov</p>
-        <p class="author">Founder</p>
+        <p class="author">Марио</p>
+        <p class="author">Фитнес инструктор</p>
     </div>
     <div class="my_trener">
         <div class="img">
-            <img src="{{ site.baseurl }}/images/CTO.jpg" alt="">
+            <img src="{{ site.baseurl }}/images/fitnes4.jpg" alt="">
         </div>
-        <p class="author">Mihail Gospodinov</p>
-        <p class="author">Co-Founder</p>
+        <p class="author">Георги Георгиев</p>
+        <p class="author">Диети и Хранене</p>
     </div>
+</div>
+
+<div class="info_trenery">
+    {% include info_about.html %}   
 </div>
 
 

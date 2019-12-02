@@ -1,0 +1,42 @@
+.main-packages {
+    .h1-Packages {
+        display: none;
+    }
+
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+    margin: 0 auto;
+    padding: 2em;
+
+    .info {
+        border: 5px solid #3498db;
+        border-radius: 0.5em;
+        text-align: center;
+        grid-row: span 2;
+        color: #3498db;
+        
+
+        &:hover {
+            background: #3498db;
+            color: #FFF;
+
+            a {
+                color: #FFF;
+            }
+        }
+        
+        p {
+            color: #CCC;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+    }
+}

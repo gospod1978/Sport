@@ -39,6 +39,12 @@
     
     }
 
+    .tren {
+        display: block;
+        text-align: center;
+        color: #3498db;
+    }
+
     .trenery {
        display: flex;
        justify-content: center;
@@ -60,5 +66,14 @@
            box-shadow: 0 0 1.5em 0 rgba(black, 0.7);
        }
       
+   }
+
+   .info_trenery {
+       padding: 2em;
+
+       h5 {
+        padding-left: 2em;
+        color: #3498db;
+       }
    }
 }

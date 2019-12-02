@@ -64,6 +64,15 @@
     content: '\f015';
 }
 
+.nav li.page-title-packages a:before {
+    content: '\f781';
+}
+
+.nav li.page-title-stories a:before {
+    content: '\f05a';
+}
+
+
 .sticky {
     position:fixed;
     top: 10em;
@@ -94,6 +103,6 @@
 
 .nav {
     @include bp(mobile) {
-        display: none;
+        font-size: var(--font-size, 18px);
     }
 }
