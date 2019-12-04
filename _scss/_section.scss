@@ -93,6 +93,8 @@ section .ar-box {
     z-index: 3;
 }
 
+.p-site-five p:before,
+.p-site-one p:before,
 .p-services p:before {
     content:'Фитнес програми! Диети! Хранене!';
     z-index: 3;

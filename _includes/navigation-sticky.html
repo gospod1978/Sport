@@ -4,11 +4,13 @@
 
         {% for current_page in navigation_pages %}   
             {% if current_page.title %}
+             {% if current_page.order %}
 
            
             <li class="page-title-{{ current_page.title | slugify }}{% if current_page.url == page.url %} current-page{% endif %}">
                 <a href="{{ site.baseurl }}{{ current_page.url }}"></a>
             </li>
+            {% endif %}
             {% endif %}
         {% endfor %}
     </ul>
