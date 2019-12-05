@@ -1,10 +1,42 @@
 ---
 title: Home
 layout: main
+permalink: 
 order: 1
 ---
 
-<h1>Hello There</h1>
+<div class="main-home-h">
+    <div class="home-h">
+        <h1>Готов ли си за промяна!</h1>
 
- 
+        <h2>Сега е момента да се свържиш с нас!</h2>
+
+        <h2>Аз и моят екип те Очакваме!</h2>
+
+        <h2>Ела при нас!</h2>
+
+        <h2>Eла и се забавлявай!</h2>
+    </div>
+
+       <div class="main-home-media">
+        <img src="{{ site.baseurl }}/images/richard.png" alt="">
+        </div>
+</div>
+
+
+
+<div class="site-home">
+
+    <div class="home-media">
+        {% include home_media.html %}
+    </div>
+
+    <div class="scroll" style="overflow-y:scroll; height:380px;">
+        {% include scroll.html %} 
+    </div>
+</div>
+
+<div class="video">
+    {% include video.html %}
+</div>
 
