@@ -5,12 +5,23 @@
 .information-text {
     padding: 2em;
    
-    h3, h4, h5 {
+    h3, h4, h5, h6 {
         color: #3498db;
         text-align: center;
     }
 
     p {
+        color: #666;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     
+    li {
+        overflow: hidden;
         color: #666;
     }
 
