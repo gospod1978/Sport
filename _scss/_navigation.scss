@@ -77,6 +77,12 @@
     position:fixed;
     top: 10em;
     z-index: 5;
+
+    @include bp(phone) {
+        position: absolute;
+        z-index: 0;
+        display: none;
+    }
 }
 
 .sticky ul {
@@ -101,8 +107,4 @@
     opacity: 0.3;
 }
 
-.nav {
-    @include bp(mobile) {
-        font-size: var(--font-size, 18px);
-    }
-}
+

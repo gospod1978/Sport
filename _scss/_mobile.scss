@@ -1,0 +1,49 @@
+html {
+   
+    @include bp(mobile) {
+
+    font-size: var(--font-size-laptop, 14px);
+    line-height: var(--font-line-height, 1.5);
+    }
+
+    @include bp(tablet) {
+    font-size: var(--font-size-mobile, 10px);
+    line-height: var(--font-line-height-phone, 1.2);
+    }
+}
+   @include bp(mobile) {
+       
+    .site-header {
+        flex-direction: column;
+    }
+
+    .main-home-h,
+    .video {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video {
+        padding-top: 1em;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .sticky {
+        display: none;
+    }
+
+    .main-home-h,
+    .site-home,
+    .video {
+        flex-direction: column;
+    }
+}
+
+@include bp(phone) {
+    .sticky {
+        display: none;
+    }
+}

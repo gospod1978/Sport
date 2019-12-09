@@ -1,0 +1,8 @@
+html {
+   
+    @include bp(desktop) {
+
+    font-size: var(--font-size, 18px);
+    line-height: var(--font-line-height, 1.5);
+    }
+}
