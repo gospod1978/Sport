@@ -7,7 +7,7 @@ html {
     }
 
     @include bp(tablet) {
-    font-size: var(--font-size-mobile, 10px);
+    font-size: var(--font-size-mobile, 12px);
     line-height: var(--font-line-height-phone, 1.2);
     }
 }
